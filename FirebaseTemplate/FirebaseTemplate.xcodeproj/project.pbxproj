@@ -7,18 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D209076024B9EA180069B920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D209075F24B9EA180069B920 /* Main.storyboard */; };
-		D209076324B9ED810069B920 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076224B9ED810069B920 /* SignInVC.swift */; };
-		D209076524B9EE8D0069B920 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076424B9EE8D0069B920 /* SignUpVC.swift */; };
-		D209076724B9FB0D0069B920 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076624B9FB0D0069B920 /* HomeVC.swift */; };
-		D209076924B9FDC60069B920 /* CreateItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076824B9FDC60069B920 /* CreateItemVC.swift */; };
-		D209076B24B9FDD80069B920 /* ItemListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076A24B9FDD80069B920 /* ItemListVC.swift */; };
+		5946FA2E24C39C1700028725 /* PatientHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA0824C39C1600028725 /* PatientHistoryVC.swift */; };
+		5946FA2F24C39C1700028725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA0924C39C1600028725 /* ViewController.swift */; };
+		5946FA3024C39C1700028725 /* ChoiceDentistCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA0A24C39C1600028725 /* ChoiceDentistCV.swift */; };
+		5946FA3124C39C1700028725 /* DentistHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA0B24C39C1600028725 /* DentistHomeVC.swift */; };
+		5946FA3224C39C1700028725 /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA0C24C39C1600028725 /* ScheduleVC.swift */; };
+		5946FA3324C39C1700028725 /* PatientHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA0D24C39C1600028725 /* PatientHomeVC.swift */; };
+		5946FA3424C39C1700028725 /* EmergencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA0E24C39C1600028725 /* EmergencyVC.swift */; };
+		5946FA3524C39C1700028725 /* DoneBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA0F24C39C1600028725 /* DoneBtn.swift */; };
+		5946FA3624C39C1700028725 /* DentistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1024C39C1600028725 /* DentistCell.swift */; };
+		5946FA3724C39C1700028725 /* DentistOrPatientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1124C39C1600028725 /* DentistOrPatientVC.swift */; };
+		5946FA3824C39C1700028725 /* MapsNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1224C39C1600028725 /* MapsNameVC.swift */; };
+		5946FA3924C39C1700028725 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1324C39C1600028725 /* SignInVC.swift */; };
+		5946FA3A24C39C1700028725 /* DentistsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1424C39C1600028725 /* DentistsVC.swift */; };
+		5946FA3B24C39C1700028725 /* MapsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1524C39C1600028725 /* MapsVC.swift */; };
+		5946FA3C24C39C1700028725 /* PatientOfTheDentistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1624C39C1600028725 /* PatientOfTheDentistVC.swift */; };
+		5946FA3D24C39C1700028725 /* PatientInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1724C39C1600028725 /* PatientInformationVC.swift */; };
+		5946FA3E24C39C1700028725 /* InformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1824C39C1600028725 /* InformationVC.swift */; };
+		5946FA3F24C39C1700028725 /* NextAppointmentsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1924C39C1600028725 /* NextAppointmentsList.swift */; };
+		5946FA4024C39C1700028725 /* DentistInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1A24C39C1600028725 /* DentistInformationVC.swift */; };
+		5946FA4124C39C1700028725 /* PatientFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1B24C39C1600028725 /* PatientFileVC.swift */; };
+		5946FA4224C39C1700028725 /* AppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1C24C39C1600028725 /* AppointmentVC.swift */; };
+		5946FA4324C39C1700028725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5946FA1D24C39C1600028725 /* Assets.xcassets */; };
+		5946FA4424C39C1700028725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5946FA1E24C39C1600028725 /* LaunchScreen.storyboard */; };
+		5946FA4524C39C1700028725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5946FA2024C39C1600028725 /* Main.storyboard */; };
+		5946FA4624C39C1700028725 /* Dentist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA2324C39C1600028725 /* Dentist.swift */; };
+		5946FA4724C39C1700028725 /* Governorate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA2424C39C1600028725 /* Governorate.swift */; };
+		5946FA4824C39C1700028725 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA2524C39C1600028725 /* Patient.swift */; };
+		5946FA4924C39C1700028725 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA2624C39C1600028725 /* Appointment.swift */; };
+		5946FA4A24C39C1700028725 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA2724C39C1600028725 /* Maps.swift */; };
+		5946FA4B24C39C1700028725 /* AppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA2824C39C1600028725 /* AppointmentCell.swift */; };
+		5946FA4D24C39C1700028725 /* Lalezar-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5946FA2B24C39C1600028725 /* Lalezar-Regular.ttf */; };
+		D209076024B9EA180069B920 /* FirebaseMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D209075F24B9EA180069B920 /* FirebaseMain.storyboard */; };
 		D26B2C612469F2A200470CA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D26B2C602469F2A200470CA2 /* GoogleService-Info.plist */; };
 		D2C26FD424662807005E16A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C26FD324662807005E16A3 /* AppDelegate.swift */; };
 		D2C26FD624662807005E16A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C26FD524662807005E16A3 /* SceneDelegate.swift */; };
 		D2C26FDA24662809005E16A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C26FD924662809005E16A3 /* Assets.xcassets */; };
 		D2C26FDD24662809005E16A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C26FDC24662809005E16A3 /* Preview Assets.xcassets */; };
-		D2C26FE024662809005E16A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C26FDE24662809005E16A3 /* LaunchScreen.storyboard */; };
 		D2C27013246628E0005E16A3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C27012246628E0005E16A3 /* libsqlite3.tbd */; };
 		D2C27015246628E5005E16A3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C27014246628E5005E16A3 /* libc++.tbd */; };
 		D2C2701D24662A79005E16A3 /* gRPC-Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C26FE8246628B8005E16A3 /* gRPC-Core.framework */; };
@@ -59,21 +84,51 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5946FA0824C39C1600028725 /* PatientHistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientHistoryVC.swift; sourceTree = "<group>"; };
+		5946FA0924C39C1600028725 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5946FA0A24C39C1600028725 /* ChoiceDentistCV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceDentistCV.swift; sourceTree = "<group>"; };
+		5946FA0B24C39C1600028725 /* DentistHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DentistHomeVC.swift; sourceTree = "<group>"; };
+		5946FA0C24C39C1600028725 /* ScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
+		5946FA0D24C39C1600028725 /* PatientHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientHomeVC.swift; sourceTree = "<group>"; };
+		5946FA0E24C39C1600028725 /* EmergencyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyVC.swift; sourceTree = "<group>"; };
+		5946FA0F24C39C1600028725 /* DoneBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneBtn.swift; sourceTree = "<group>"; };
+		5946FA1024C39C1600028725 /* DentistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DentistCell.swift; sourceTree = "<group>"; };
+		5946FA1124C39C1600028725 /* DentistOrPatientVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DentistOrPatientVC.swift; sourceTree = "<group>"; };
+		5946FA1224C39C1600028725 /* MapsNameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsNameVC.swift; sourceTree = "<group>"; };
+		5946FA1324C39C1600028725 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		5946FA1424C39C1600028725 /* DentistsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DentistsVC.swift; sourceTree = "<group>"; };
+		5946FA1524C39C1600028725 /* MapsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsVC.swift; sourceTree = "<group>"; };
+		5946FA1624C39C1600028725 /* PatientOfTheDentistVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientOfTheDentistVC.swift; sourceTree = "<group>"; };
+		5946FA1724C39C1600028725 /* PatientInformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientInformationVC.swift; sourceTree = "<group>"; };
+		5946FA1824C39C1600028725 /* InformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationVC.swift; sourceTree = "<group>"; };
+		5946FA1924C39C1600028725 /* NextAppointmentsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextAppointmentsList.swift; sourceTree = "<group>"; };
+		5946FA1A24C39C1600028725 /* DentistInformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DentistInformationVC.swift; sourceTree = "<group>"; };
+		5946FA1B24C39C1600028725 /* PatientFileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientFileVC.swift; sourceTree = "<group>"; };
+		5946FA1C24C39C1600028725 /* AppointmentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentVC.swift; sourceTree = "<group>"; };
+		5946FA1D24C39C1600028725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5946FA1F24C39C1600028725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5946FA2124C39C1600028725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5946FA2324C39C1600028725 /* Dentist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dentist.swift; sourceTree = "<group>"; };
+		5946FA2424C39C1600028725 /* Governorate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Governorate.swift; sourceTree = "<group>"; };
+		5946FA2524C39C1600028725 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		5946FA2624C39C1600028725 /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		5946FA2724C39C1600028725 /* Maps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
+		5946FA2824C39C1600028725 /* AppointmentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentCell.swift; sourceTree = "<group>"; };
+		5946FA2B24C39C1600028725 /* Lalezar-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lalezar-Regular.ttf"; sourceTree = "<group>"; };
 		9377AE6CE82235456148A2D9 /* Pods-FirebaseTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.release.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
-		D209075F24B9EA180069B920 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D209075F24B9EA180069B920 /* FirebaseMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirebaseMain.storyboard; sourceTree = "<group>"; };
 		D209076224B9ED810069B920 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		D209076424B9EE8D0069B920 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		D209076624B9FB0D0069B920 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		D209076824B9FDC60069B920 /* CreateItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemVC.swift; sourceTree = "<group>"; };
 		D209076A24B9FDD80069B920 /* ItemListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListVC.swift; sourceTree = "<group>"; };
 		D26B2C602469F2A200470CA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D2C26FD024662807005E16A3 /* FirebaseTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C26FD024662807005E16A3 /* Asnani.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asnani.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C26FD324662807005E16A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C26FD524662807005E16A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D2C26FD924662809005E16A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2C26FDC24662809005E16A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D2C26FDF24662809005E16A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2C26FE124662809005E16A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2C26FE8246628B8005E16A3 /* gRPC-Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "gRPC-Core.framework"; sourceTree = "<group>"; };
 		D2C26FE9246628B8005E16A3 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleDataTransport.framework; sourceTree = "<group>"; };
@@ -159,6 +214,68 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5946FA0624C39C1600028725 /* أسناني */ = {
+			isa = PBXGroup;
+			children = (
+				5946FA0724C39C1600028725 /*  ViewController */,
+				5946FA1D24C39C1600028725 /* Assets.xcassets */,
+				5946FA1E24C39C1600028725 /* LaunchScreen.storyboard */,
+				5946FA2024C39C1600028725 /* Main.storyboard */,
+				5946FA2224C39C1600028725 /* Model */,
+				5946FA2A24C39C1600028725 /* Font */,
+			);
+			path = "أسناني";
+			sourceTree = "<group>";
+		};
+		5946FA0724C39C1600028725 /*  ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5946FA0824C39C1600028725 /* PatientHistoryVC.swift */,
+				5946FA0924C39C1600028725 /* ViewController.swift */,
+				5946FA0A24C39C1600028725 /* ChoiceDentistCV.swift */,
+				5946FA0B24C39C1600028725 /* DentistHomeVC.swift */,
+				5946FA0C24C39C1600028725 /* ScheduleVC.swift */,
+				5946FA0D24C39C1600028725 /* PatientHomeVC.swift */,
+				5946FA0E24C39C1600028725 /* EmergencyVC.swift */,
+				5946FA0F24C39C1600028725 /* DoneBtn.swift */,
+				5946FA1024C39C1600028725 /* DentistCell.swift */,
+				5946FA1124C39C1600028725 /* DentistOrPatientVC.swift */,
+				5946FA1224C39C1600028725 /* MapsNameVC.swift */,
+				5946FA1324C39C1600028725 /* SignInVC.swift */,
+				5946FA1424C39C1600028725 /* DentistsVC.swift */,
+				5946FA1524C39C1600028725 /* MapsVC.swift */,
+				5946FA1624C39C1600028725 /* PatientOfTheDentistVC.swift */,
+				5946FA1724C39C1600028725 /* PatientInformationVC.swift */,
+				5946FA1824C39C1600028725 /* InformationVC.swift */,
+				5946FA1924C39C1600028725 /* NextAppointmentsList.swift */,
+				5946FA1A24C39C1600028725 /* DentistInformationVC.swift */,
+				5946FA1B24C39C1600028725 /* PatientFileVC.swift */,
+				5946FA1C24C39C1600028725 /* AppointmentVC.swift */,
+			);
+			path = " ViewController";
+			sourceTree = "<group>";
+		};
+		5946FA2224C39C1600028725 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5946FA2324C39C1600028725 /* Dentist.swift */,
+				5946FA2424C39C1600028725 /* Governorate.swift */,
+				5946FA2524C39C1600028725 /* Patient.swift */,
+				5946FA2624C39C1600028725 /* Appointment.swift */,
+				5946FA2724C39C1600028725 /* Maps.swift */,
+				5946FA2824C39C1600028725 /* AppointmentCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5946FA2A24C39C1600028725 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5946FA2B24C39C1600028725 /* Lalezar-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		8378283248B71B8695152817 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +300,7 @@
 		D2C26FC724662807005E16A3 = {
 			isa = PBXGroup;
 			children = (
+				5946FA0624C39C1600028725 /* أسناني */,
 				D2C26FE7246628B8005E16A3 /* iOS */,
 				D2C26FD224662807005E16A3 /* FirebaseTemplate */,
 				D2C26FD124662807005E16A3 /* Products */,
@@ -194,7 +312,7 @@
 		D2C26FD124662807005E16A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2C26FD024662807005E16A3 /* FirebaseTemplate.app */,
+				D2C26FD024662807005E16A3 /* Asnani.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,11 +324,10 @@
 				D26B2C602469F2A200470CA2 /* GoogleService-Info.plist */,
 				D2C26FD324662807005E16A3 /* AppDelegate.swift */,
 				D2C26FD524662807005E16A3 /* SceneDelegate.swift */,
-				D209075F24B9EA180069B920 /* Main.storyboard */,
+				D209075F24B9EA180069B920 /* FirebaseMain.storyboard */,
 				D2C2703E24662C5A005E16A3 /* Networking */,
 				D2C2705324662CAA005E16A3 /* Models */,
 				D2C26FD924662809005E16A3 /* Assets.xcassets */,
-				D2C26FDE24662809005E16A3 /* LaunchScreen.storyboard */,
 				D2C26FE124662809005E16A3 /* Info.plist */,
 				D2C2703524662C5A005E16A3 /* Extensions */,
 				D2C2703924662C5A005E16A3 /* Helpers */,
@@ -324,7 +441,7 @@
 			);
 			name = FirebaseTemplate;
 			productName = FirebaseTemplate;
-			productReference = D2C26FD024662807005E16A3 /* FirebaseTemplate.app */;
+			productReference = D2C26FD024662807005E16A3 /* Asnani.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -365,10 +482,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2C26FE024662809005E16A3 /* LaunchScreen.storyboard in Resources */,
-				D209076024B9EA180069B920 /* Main.storyboard in Resources */,
+				D209076024B9EA180069B920 /* FirebaseMain.storyboard in Resources */,
 				D2C26FDD24662809005E16A3 /* Preview Assets.xcassets in Resources */,
+				5946FA4524C39C1700028725 /* Main.storyboard in Resources */,
 				D2C26FDA24662809005E16A3 /* Assets.xcassets in Resources */,
+				5946FA4424C39C1700028725 /* LaunchScreen.storyboard in Resources */,
+				5946FA4D24C39C1700028725 /* Lalezar-Regular.ttf in Resources */,
+				5946FA4324C39C1700028725 /* Assets.xcassets in Resources */,
 				D26B2C612469F2A200470CA2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,36 +544,66 @@
 			files = (
 				D2C26FD424662807005E16A3 /* AppDelegate.swift in Sources */,
 				D2C2704C24662C6E005E16A3 /* Networking.swift in Sources */,
+				5946FA3424C39C1700028725 /* EmergencyVC.swift in Sources */,
 				D2C2705724662F3F005E16A3 /* Item.swift in Sources */,
-				D209076724B9FB0D0069B920 /* HomeVC.swift in Sources */,
+				5946FA4124C39C1700028725 /* PatientFileVC.swift in Sources */,
+				5946FA4024C39C1700028725 /* DentistInformationVC.swift in Sources */,
+				5946FA4A24C39C1700028725 /* Maps.swift in Sources */,
+				5946FA3C24C39C1700028725 /* PatientOfTheDentistVC.swift in Sources */,
+				5946FA2F24C39C1700028725 /* ViewController.swift in Sources */,
+				5946FA3224C39C1700028725 /* ScheduleVC.swift in Sources */,
+				5946FA4B24C39C1700028725 /* AppointmentCell.swift in Sources */,
 				D2C2704B24662C68005E16A3 /* Optional.swift in Sources */,
+				5946FA3324C39C1700028725 /* PatientHomeVC.swift in Sources */,
+				5946FA4724C39C1700028725 /* Governorate.swift in Sources */,
+				5946FA3F24C39C1700028725 /* NextAppointmentsList.swift in Sources */,
+				5946FA4624C39C1700028725 /* Dentist.swift in Sources */,
 				D2C26FD624662807005E16A3 /* SceneDelegate.swift in Sources */,
+				5946FA3924C39C1700028725 /* SignInVC.swift in Sources */,
+				5946FA3B24C39C1700028725 /* MapsVC.swift in Sources */,
+				5946FA3524C39C1700028725 /* DoneBtn.swift in Sources */,
+				5946FA3024C39C1700028725 /* ChoiceDentistCV.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
+				5946FA4824C39C1700028725 /* Patient.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,
-				D209076924B9FDC60069B920 /* CreateItemVC.swift in Sources */,
+				5946FA3824C39C1700028725 /* MapsNameVC.swift in Sources */,
+				5946FA3624C39C1700028725 /* DentistCell.swift in Sources */,
+				5946FA3124C39C1700028725 /* DentistHomeVC.swift in Sources */,
+				5946FA3D24C39C1700028725 /* PatientInformationVC.swift in Sources */,
+				5946FA4224C39C1700028725 /* AppointmentVC.swift in Sources */,
 				D2C2704624662C63005E16A3 /* ImageUploader.swift in Sources */,
-				D209076B24B9FDD80069B920 /* ItemListVC.swift in Sources */,
 				D2C2705224662C9A005E16A3 /* User.swift in Sources */,
-				D209076324B9ED810069B920 /* SignInVC.swift in Sources */,
 				D2C2705024662C73005E16A3 /* NetworkingSignUp.swift in Sources */,
 				D2C2704524662C63005E16A3 /* ImageLoader.swift in Sources */,
 				D2C2704824662C63005E16A3 /* DateFromatter.swift in Sources */,
 				D2C2704F24662C73005E16A3 /* NetowrkableAuth.swift in Sources */,
 				D2C2704D24662C6E005E16A3 /* NetworkingImages.swift in Sources */,
-				D209076524B9EE8D0069B920 /* SignUpVC.swift in Sources */,
+				5946FA4924C39C1700028725 /* Appointment.swift in Sources */,
+				5946FA3724C39C1700028725 /* DentistOrPatientVC.swift in Sources */,
+				5946FA3E24C39C1700028725 /* InformationVC.swift in Sources */,
+				5946FA2E24C39C1700028725 /* PatientHistoryVC.swift in Sources */,
+				5946FA3A24C39C1700028725 /* DentistsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D2C26FDE24662809005E16A3 /* LaunchScreen.storyboard */ = {
+		5946FA1E24C39C1600028725 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D2C26FDF24662809005E16A3 /* Base */,
+				5946FA1F24C39C1600028725 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5946FA2024C39C1600028725 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5946FA2124C39C1600028725 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -598,8 +748,8 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.khatma.com;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.batool.asnani;
+				PRODUCT_NAME = Asnani;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -630,8 +780,8 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.khatma.com;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.batool.asnani;
+				PRODUCT_NAME = Asnani;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
