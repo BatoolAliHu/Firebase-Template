@@ -8,8 +8,14 @@
 
 import UIKit
 import EventKit
+import EventKitUI
 
-class ScheduleVC: UIViewController {
+class ScheduleVC: UIViewController, EKEventEditViewDelegate {
+    
+    func eventEditViewController(_ controller: EKEventEditViewController, didCompleteWith action: EKEventEditViewAction) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     let eventStore = EKEventStore()
     
@@ -53,12 +59,16 @@ class ScheduleVC: UIViewController {
                 event.title = name
                 event.startDate = Date()
                 event.endDate = endDate
-
-            do {
-                try eventStore.save(event, span: .thisEvent)
-            }catch {
-                print("saving event error: \(error)")
-            }
+            let eventViewController: EKEventEditViewController = EKEventEditViewController()
+            eventViewController.event = event
+            eventViewController.eventStore = eventStore
+            eventViewController.editViewDelegate = self
+            self.present(eventViewController, animated: true, completion: nil)
+//            do {
+//                try eventStore.save(event, span: .thisEvent)
+//            }catch {
+//                print("saving event error: \(error)")
+//            }
 
         }
 

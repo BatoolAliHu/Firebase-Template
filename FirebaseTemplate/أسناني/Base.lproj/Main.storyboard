@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A1S-3D-NrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wlX-C7-var">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8wk-gV-aT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5541" y="423"/>
+            <point key="canvasLocation" x="5568" y="378"/>
         </scene>
         <!--Next Appointments List-->
         <scene sceneID="IFq-SE-f17">
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrq-gE-EdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6532" y="423"/>
+            <point key="canvasLocation" x="6528" y="378"/>
         </scene>
         <!--DentistsVC-->
         <scene sceneID="B3F-kc-z5C">
@@ -198,17 +198,11 @@
                                 <rect key="frame" x="107" y="470" width="193" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <segue destination="TJV-39-K0J" kind="show" identifier="تسجيل دخول" id="OKA-RH-z0S"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFB-2z-jPh">
                                 <rect key="frame" x="111" y="365" width="193" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <segue destination="TJV-39-K0J" kind="show" identifier="دخول" id="GCE-JS-QKb"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -218,6 +212,8 @@
                     <connections>
                         <outlet property="signIn" destination="kFB-2z-jPh" id="kCn-Cc-t4O"/>
                         <outlet property="signUP" destination="Lpp-ay-2pz" id="e9w-Sa-QWH"/>
+                        <segue destination="TJV-39-K0J" kind="modal" identifier="تسجيل دخول" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="0B6-7X-kl4"/>
+                        <segue destination="slJ-Jx-O6m" kind="show" identifier="دخول" id="rxq-Pg-TKQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJM-U3-Q1Y" sceneMemberID="firstResponder"/>
@@ -229,7 +225,7 @@
             <objects>
                 <viewController id="TJV-39-K0J" customClass="DentistOrPatientVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wVW-Ok-NnE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="Vx2-M6-llq">
@@ -240,9 +236,6 @@
                                 <rect key="frame" x="111" y="448" width="193" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <segue destination="l2g-86-CpC" kind="show" id="x9j-EC-VfO"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAy-a4-FI7">
                                 <rect key="frame" x="111" y="342" width="193" height="60"/>
@@ -257,8 +250,7 @@
                     <connections>
                         <outlet property="dentistBtn" destination="wAy-a4-FI7" id="El5-5z-99O"/>
                         <outlet property="patientBtn" destination="cl0-Zs-oKJ" id="htk-OC-abx"/>
-                        <segue destination="l2g-86-CpC" kind="show" id="vYT-A8-cyh"/>
-                        <segue destination="slJ-Jx-O6m" kind="show" id="qUu-ed-KPV"/>
+                        <segue destination="l2g-86-CpC" kind="show" identifier="بيانات١" id="wUN-ca-We7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hb1-RV-V2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -270,7 +262,7 @@
             <objects>
                 <viewController id="AKE-lo-rhK" customClass="DentistInfoVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ab5-Qw-H9G">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="26" translatesAutoresizingMaskIntoConstraints="NO" id="KCc-5T-zby">
@@ -323,6 +315,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="EKf-wO-AD9"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dHt-qZ-noe"/>
                     <connections>
                         <outlet property="build" destination="cnC-KA-uW2" id="m2S-pi-dBe"/>
                         <outlet property="cV" destination="ezf-Qs-5lk" id="Kya-Ao-1dd"/>
@@ -331,11 +324,12 @@
                         <outlet property="extensionNumber" destination="2Uv-9U-Lt0" id="5QC-o1-Ivp"/>
                         <outlet property="hospital" destination="9nv-Nz-hVu" id="6t2-Oa-8C6"/>
                         <outlet property="isSpecialized" destination="l4B-dS-Bb0" id="8Mb-RA-M4f"/>
+                        <segue destination="SKn-ta-a1B" kind="show" identifier="dentistHome" id="EBl-27-w22"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QoZ-TP-cjt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3673.913043478261" y="-335.49107142857139"/>
+            <point key="canvasLocation" x="3674" y="-458"/>
         </scene>
         <!--InformationVC-->
         <scene sceneID="GLw-3i-q7L">
@@ -382,14 +376,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="تأكيد كلمة المرور" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aq8-Ba-9Ov">
                                 <rect key="frame" x="61" y="587" width="282" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CN0-r9-Uf0">
                                 <rect key="frame" x="111" y="680" width="182" height="52"/>
@@ -399,7 +393,6 @@
                                     <action selector="next:" destination="l2g-86-CpC" eventType="touchUpInside" id="07f-G5-hP4"/>
                                     <action selector="next:" destination="wlX-C7-var" eventType="touchUpInside" id="b55-ZT-heR"/>
                                     <action selector="next:" destination="gMY-6i-8Wi" eventType="touchUpInside" id="vLr-WU-sA9"/>
-                                    <segue destination="wlX-C7-var" kind="show" id="5HO-gi-zfl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -414,8 +407,8 @@
                         <outlet property="numberTextField" destination="bGv-zh-FQN" id="5h4-9v-04M"/>
                         <outlet property="password2TextField" destination="aq8-Ba-9Ov" id="gGb-Ia-VVN"/>
                         <outlet property="passwordTextField" destination="ulI-Oj-71X" id="cUK-k9-CJS"/>
-                        <segue destination="AKE-lo-rhK" kind="modal" identifier="طبيب" modalPresentationStyle="fullScreen" id="eAg-oo-eOF"/>
-                        <segue destination="wlX-C7-var" kind="modal" identifier="مراجع" modalPresentationStyle="fullScreen" id="FX4-PI-fP9"/>
+                        <segue destination="AKE-lo-rhK" kind="modal" identifier="طبيب" modalTransitionStyle="coverVertical" id="Eah-Qj-cb9"/>
+                        <segue destination="wlX-C7-var" kind="modal" identifier="مراجع" modalTransitionStyle="coverVertical" id="nSs-Dj-eVE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFH-jp-ZeU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -426,6 +419,7 @@
         <!--Patient InformationVC-->
         <scene sceneID="fzu-0U-MJN">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OnC-k3-o84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="wlX-C7-var" customClass="PatientInformationVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5F9-MB-BOd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -488,9 +482,8 @@
                         <outlet property="governorateTextField" destination="klz-cT-UkL" id="d0v-ll-9ch"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OnC-k3-o84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3673.913043478261" y="367.63392857142856"/>
+            <point key="canvasLocation" x="3674" y="344"/>
         </scene>
         <!--Sign InVC-->
         <scene sceneID="So3-O9-i7w">
@@ -529,10 +522,6 @@
                         <viewLayoutGuide key="safeArea" id="KI9-cj-mxE"/>
                     </view>
                     <navigationItem key="navigationItem" id="cD4-xF-qF1"/>
-                    <connections>
-                        <segue destination="SKn-ta-a1B" kind="modal" modalPresentationStyle="fullScreen" id="tgS-lU-hL5"/>
-                        <segue destination="1bL-pD-68e" kind="modal" id="JuM-uG-TaC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uz-Mb-11O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -576,7 +565,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1x-1a-pCE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3300.0000000000005" y="2279.4642857142858"/>
+            <point key="canvasLocation" x="3674" y="2554"/>
         </scene>
         <!--Maps NameVC-->
         <scene sceneID="usc-sa-lb2">
@@ -710,7 +699,7 @@
             <objects>
                 <viewController id="SKn-ta-a1B" customClass="DentistHomeVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="im0-EE-bhr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="9" translatesAutoresizingMaskIntoConstraints="NO" id="VBa-jC-7yf">
@@ -814,7 +803,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYd-24-yKP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4687" y="-281"/>
+            <point key="canvasLocation" x="5455" y="-423"/>
         </scene>
         <!--Patient HomeVC-->
         <scene sceneID="80u-LP-0ge">
@@ -888,7 +877,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WMb-vu-KNn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="kJq-OM-vUX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4686.9565217391309" y="385.71428571428572"/>
+            <point key="canvasLocation" x="4687" y="344"/>
         </scene>
         <!--Choice DentistCV-->
         <scene sceneID="HLY-xx-ODz">
@@ -1027,7 +1016,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ti4-1m-nTm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6182.608695652174" y="2219.1964285714284"/>
+            <point key="canvasLocation" x="6039" y="2244"/>
         </scene>
         <!--LoadingVC-->
         <scene sceneID="80Z-R6-P7b">
@@ -1063,15 +1052,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cqs-4Y-uqJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6761" y="-402"/>
+            <point key="canvasLocation" x="7320" y="-423"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="IMT-CX-XoT"/>
-        <segue reference="sqH-pb-EOT"/>
-        <segue reference="5HO-gi-zfl"/>
-        <segue reference="vYT-A8-cyh"/>
-        <segue reference="OKA-RH-z0S"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="725" height="1558"/>
