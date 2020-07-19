@@ -258,7 +258,7 @@
                     <navigationItem key="navigationItem" id="lUW-oG-xyP"/>
                     <connections>
                         <segue destination="l2g-86-CpC" kind="show" identifier="بيانات١" id="wUN-ca-We7"/>
-                        <segue destination="slJ-Jx-O6m" kind="show" identifier="" id="ujU-3J-PDR"/>
+                        <segue destination="slJ-Jx-O6m" kind="show" identifier="5" id="ujU-3J-PDR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hb1-RV-V2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -535,8 +535,8 @@
                     <connections>
                         <outlet property="pss" destination="Aj6-ST-JwG" id="Tpf-gN-9L5"/>
                         <outlet property="userName" destination="5DK-yx-En3" id="dhC-ht-pFU"/>
-                        <segue destination="1bL-pD-68e" kind="show" identifier="3" id="AV0-44-BI2"/>
-                        <segue destination="SKn-ta-a1B" kind="show" identifier="4" id="StS-Hn-jbh"/>
+                        <segue destination="1bL-pD-68e" kind="modal" identifier="4" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="AV0-44-BI2"/>
+                        <segue destination="SKn-ta-a1B" kind="modal" identifier="3" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="StS-Hn-jbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uz-Mb-11O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -715,7 +715,7 @@
             <objects>
                 <viewController id="SKn-ta-a1B" customClass="DentistHomeVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="im0-EE-bhr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="9" translatesAutoresizingMaskIntoConstraints="NO" id="VBa-jC-7yf">
@@ -798,6 +798,7 @@
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="ifTapped:" destination="5rl-82-Aii" eventType="touchUpInside" id="ysR-ZG-yEq"/>
+                                    <segue destination="oM3-v4-kJ2" kind="show" id="ezB-27-x6y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONO-k1-BTR">
@@ -806,6 +807,7 @@
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="ifTapped:" destination="5rl-82-Aii" eventType="touchUpInside" id="Ese-Yt-uJI"/>
+                                    <segue destination="oM3-v4-kJ2" kind="show" id="Rcw-GL-td1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -813,9 +815,6 @@
                         <viewLayoutGuide key="safeArea" id="p8q-V8-eH0"/>
                     </view>
                     <navigationItem key="navigationItem" id="KBB-S1-R4v"/>
-                    <connections>
-                        <segue destination="oM3-v4-kJ2" kind="show" identifier="xray" id="naF-rd-qiS"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYd-24-yKP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -826,11 +825,11 @@
             <objects>
                 <viewController id="1bL-pD-68e" customClass="PatientHomeVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IYd-GC-AbN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="fyh-fL-oOB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVI-FO-mOV">
                                 <rect key="frame" x="43" y="626" width="152" height="138"/>
@@ -1073,8 +1072,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IMT-CX-XoT"/>
-        <segue reference="AV0-44-BI2"/>
+        <segue reference="ezB-27-x6y"/>
+        <segue reference="sqH-pb-EOT"/>
         <segue reference="StS-Hn-jbh"/>
     </inferredMetricsTieBreakers>
     <resources>
