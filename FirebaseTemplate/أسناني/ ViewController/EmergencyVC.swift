@@ -60,22 +60,8 @@ class EmergencyVC: UIViewController {
     
     @IBAction func ifTapped(_ sender: UIButton) {
         if tag == 3{
-            /*
-             switch sender.tag {
-             case 0:
-             hospital = ["الاحقاقي","حمد الصقر"]
-             case 1:
-             hospital = ["محمود حيدر","مبارك"]
-             case 2:
-             hospital = ["hgrndk","hgrwmn"]
-             default:
-             break
-             }
-             */
             hospital = emergencyHospitals[sender.tag]!
             performSegue(withIdentifier: "map", sender: nil)
-            
-            
         }
         let segueName = segues[tag]
         performSegue(withIdentifier: segueName!, sender: nil)

@@ -48,69 +48,34 @@ class ScheduleVC: UIViewController, EKEventEditViewDelegate {
             print("تستهبل ؟")
         }
     }
-   
-
+    
+    
     func createReminder(name: String){
         DispatchQueue.main.async {
-                let eventStore = EKEventStore()
-                let event = EKEvent(eventStore: eventStore)
-                let endDate = Date.init(timeInterval: 3600 , since: Date())
-                event.calendar = eventStore.defaultCalendarForNewEvents
-                event.title = name
-                event.startDate = Date()
-                event.endDate = endDate
+            let eventStore = EKEventStore()
+            let event = EKEvent(eventStore: eventStore)
+            let endDate = Date.init(timeInterval: 3600 , since: Date())
+            event.calendar = eventStore.defaultCalendarForNewEvents
+            event.title = name
+            event.startDate = Date()
+            event.endDate = endDate
             let eventViewController: EKEventEditViewController = EKEventEditViewController()
             eventViewController.event = event
             eventViewController.eventStore = eventStore
             eventViewController.editViewDelegate = self
             self.present(eventViewController, animated: true, completion: nil)
-//            do {
-//                try eventStore.save(event, span: .thisEvent)
-//            }catch {
-//                print("saving event error: \(error)")
-//            }
-
         }
-
-    }
-
-    @IBAction func addAppointmentBtn(_ sender: Any) {
-        checkPermission()
-   //     createReminder()
-    /*    let appointmentStore: EKEventStore = EKEventStore()
-        DispatchQueue.main.async() {
-            appointmentStore.requestAccess(to: .event)  {(granted, error) in
-                if (granted)  &&  (error == nil)
-                {
-                    print("granted \(granted)")
-                    print("error \(error)")
-                    let appointment:EKEvent = EKEvent(eventStore: appointmentStore)
-                    appointment.title = "add appointment testing title"
-                    appointment.startDate = Date()
-                    appointment.endDate = Date()
-                    appointment.notes = "This is note"
-                    appointment.calendar = appointmentStore.defaultCalendarForNewEvents
-                    do{
-                        try appointmentStore.save(appointment, span: .thisEvent)
-                    }catch let error as NSError{
-                        print("error : \(error)")
-                    }
-                    print("save appointment")
-                    
-                }else{
-                    print("error : \(error)")
-                }
-                
-            }
- 
-            
-            
-            
-        }
-        */
         
     }
+    
+    
+    @IBAction func addAppointmentBtn(_ sender: Any) {
+        checkPermission()
+        
+    }
+    
 }
+
 
 /*
  // MARK: - Navigation

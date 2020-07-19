@@ -16,9 +16,6 @@ class MapsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         showHospitalLocation(hospitalLocArray: hospitalsInfo, selectedLoc: seleactedLoc)
-//        westSalmiyaHospital()
-//        alAhqaqeeHospital()
-//        hamadAlsaqerHospital()
     }
     
     @IBAction func backBtn(_ sender: UIButton) {

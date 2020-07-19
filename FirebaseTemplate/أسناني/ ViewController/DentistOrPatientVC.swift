@@ -10,26 +10,27 @@ import UIKit
 
 class DentistOrPatientVC: UIViewController {
     
-    @IBOutlet weak var dentistBtn: UIButton!
     
-    @IBOutlet weak var patientBtn: UIButton!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBAction func momoKaKa(_ sender: UIButton) {
+        performSegue(withIdentifier: "بيانات١", sender: sender.tag)
         
-        // Do any additional setup after loading the view.
     }
     
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if let tag = sender as? Int{
+            
+            
+            if let vc = segue.destination as? InformationVC {
+                vc.tag = tag
+            }
+        }
+    }
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            // Do any additional setup after loading the view.
+        }
+        
     
 }

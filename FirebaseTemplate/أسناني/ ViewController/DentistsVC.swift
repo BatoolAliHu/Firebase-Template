@@ -9,8 +9,6 @@
 import UIKit
 var selectedDentist : [Dentist] = []
 class DentistsVC: UIViewController {
-//    var data1: [Dentist]!
-//    var data2: [Dentist]!
     override func viewDidLoad() {
         super.viewDidLoad()
         

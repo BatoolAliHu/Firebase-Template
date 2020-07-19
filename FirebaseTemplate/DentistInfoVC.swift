@@ -48,16 +48,16 @@ class DentistInfoVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
           view.endEditing(true)
     }
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-    return 1 // number of session
+    return 1
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-    return specialized.count // number of dropdown items
+    return specialized.count
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    return specialized[row] // dropdown item
+    return specialized[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-    selectedsSpecialized = specialized[row] // selected item
+    selectedsSpecialized = specialized[row]
     isSpecialized.text = selectedsSpecialized
     }
     

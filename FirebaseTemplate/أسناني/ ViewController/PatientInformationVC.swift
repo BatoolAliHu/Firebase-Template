@@ -124,7 +124,6 @@ class PatientInformationVC: UIViewController, UITextFieldDelegate {
               
                let doneBtn2 = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(self.donePressed2))
                toolbar2.setItems([doneBtn2], animated: true)
-               // toolbar.isUserInteractionEnabled = true
                
         
         birthDateTextField.inputAccessoryView = toolbar
@@ -132,8 +131,6 @@ class PatientInformationVC: UIViewController, UITextFieldDelegate {
         genderTextField.inputAccessoryView = toolbar2
         governorateTextField.inputAccessoryView = toolbar2
         bloodTypeTextField.inputAccessoryView = toolbar2
-        
-        //assign date picker to the text field
         birthDateTextField.inputView = datePicker
         
     }
@@ -149,8 +146,6 @@ class PatientInformationVC: UIViewController, UITextFieldDelegate {
         formatter.timeStyle = .none
         
         self.birthDateTextField.text = formatter.string(from: datePicker.date)
-        
-        //  birthDateTextField.text = "\(datePicker.date)"
         self.view.endEditing(true)
         self.birthDateTextField.resignFirstResponder()
     }
@@ -189,7 +184,6 @@ class PatientInformationVC: UIViewController, UITextFieldDelegate {
                 
             })
         }
-        //performSegue(withIdentifier: "Next", sender: nil)
     }
     
     @objc func dismissPicker() {
@@ -248,26 +242,21 @@ extension PatientInformationVC: UIPickerViewDataSource, UIPickerViewDelegate{
         switch pickerView.tag {
         case 1:
             bloodTypeTextField.text = bloodType[row]
-//            bloodTypeTextField.inputAccessoryView = toolbar
             
-            //bloodTypeTextField.resignFirstResponder()
             
         case 2:
             genderTextField.text = gender[row]
-//            genderTextField.inputAccessoryView = toolbar
+
             
         //genderTextField.resignFirstResponder()
         case 3:
             governorateTextField.text = governorate[row]
-//            governorateTextField.inputAccessoryView = toolbar
             
         case 4:
             areaTextField.text = governentDic[governorateTextField.text!]?[row] ?? ""
-            //governorateTextField.resignFirstResponder()
             
             
             if row == 1 {
-                //areaPickerView == hawaliArray.
             }
             
         default:
@@ -283,8 +272,6 @@ extension String {
     static func popAlert(presenter: UIViewController, Title: String , message: String, when: Double = 0 ,firsthandler: @escaping (UIAlertAction) -> (Void) = {_ in } , secondhandler: @escaping () -> (Void) = { })
     {
         let alertController = UIAlertController(title: Title, message: message, preferredStyle: .alert)
-        //        let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: firsthandler)
-        //        alertController.addAction(okAction)
         presenter.present(alertController, animated: true)
         if(when != 0){
             var whenn = DispatchTime.now() + when
