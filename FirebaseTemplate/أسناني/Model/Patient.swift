@@ -16,10 +16,7 @@ struct Patient {
     let bloodType : String
     let governorate : String
    
-    var  allapp : [app]?
-    
-    
-}
+   
 
 
 var patientsData : [Patient] = [
@@ -31,8 +28,3 @@ var patientsData : [Patient] = [
     Patient(name: "علي محمد العلي", iD: "303058545200", age: 16, gender: "ذكر", bloodType: "AB-", governorate: "الجهراء")
     
 ]
-struct app{
-    var date : String
-    var blood : String
-    var isNext : Bool
-}

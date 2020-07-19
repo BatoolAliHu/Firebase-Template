@@ -8,7 +8,11 @@
 
 import UIKit
 
-class DentistInfoVC: UIViewController {
+class DentistInfoVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+    
+    var selectedsSpecialized: String?
+    var specialized = ["", "نعم", "لا"]
+    
     @IBOutlet weak var isSpecialized: UITextField!
     @IBOutlet weak var degreeTitle: UITextField!
     @IBOutlet weak var hospital: UITextField!
@@ -16,11 +20,48 @@ class DentistInfoVC: UIViewController {
     @IBOutlet weak var clinic: UITextField!
     @IBOutlet weak var extensionNumber: UITextField!
     @IBOutlet weak var cV: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        createPickerView()
+        dismissPickerView()
+        action()
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    func createPickerView() {
+           let pickerView = UIPickerView()
+           pickerView.delegate = self
+           isSpecialized.inputView = pickerView
+    }
+    func dismissPickerView() {
+       let toolBar = UIToolbar()
+       toolBar.sizeToFit()
+        let button = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.action))
+       toolBar.setItems([button], animated: true)
+       toolBar.isUserInteractionEnabled = true
+       isSpecialized.inputAccessoryView = toolBar
+    }
+    @objc func action() {
+          view.endEditing(true)
+    }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    return 1 // number of session
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    return specialized.count // number of dropdown items
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    return specialized[row] // dropdown item
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    selectedsSpecialized = specialized[row] // selected item
+    isSpecialized.text = selectedsSpecialized
+    }
+    
+    
     
 
     /*
