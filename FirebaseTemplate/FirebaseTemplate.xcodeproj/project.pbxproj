@@ -25,7 +25,6 @@
 		5946FA3D24C39C1700028725 /* PatientInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1724C39C1600028725 /* PatientInformationVC.swift */; };
 		5946FA3E24C39C1700028725 /* InformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1824C39C1600028725 /* InformationVC.swift */; };
 		5946FA3F24C39C1700028725 /* NextAppointmentsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1924C39C1600028725 /* NextAppointmentsList.swift */; };
-		5946FA4024C39C1700028725 /* DentistInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1A24C39C1600028725 /* DentistInformationVC.swift */; };
 		5946FA4124C39C1700028725 /* PatientFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1B24C39C1600028725 /* PatientFileVC.swift */; };
 		5946FA4224C39C1700028725 /* AppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA1C24C39C1600028725 /* AppointmentVC.swift */; };
 		5946FA4324C39C1700028725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5946FA1D24C39C1600028725 /* Assets.xcassets */; };
@@ -38,8 +37,9 @@
 		5946FA4A24C39C1700028725 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA2724C39C1600028725 /* Maps.swift */; };
 		5946FA4B24C39C1700028725 /* AppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA2824C39C1600028725 /* AppointmentCell.swift */; };
 		5946FA4D24C39C1700028725 /* Lalezar-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5946FA2B24C39C1600028725 /* Lalezar-Regular.ttf */; };
+		5946FA5124C3BA2D00028725 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5946FA5024C3BA2D00028725 /* GoogleService-Info.plist */; };
+		5946FA5724C4017200028725 /* DentistInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA5624C4017200028725 /* DentistInfoVC.swift */; };
 		D209076024B9EA180069B920 /* FirebaseMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D209075F24B9EA180069B920 /* FirebaseMain.storyboard */; };
-		D26B2C612469F2A200470CA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D26B2C602469F2A200470CA2 /* GoogleService-Info.plist */; };
 		D2C26FD424662807005E16A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C26FD324662807005E16A3 /* AppDelegate.swift */; };
 		D2C26FD624662807005E16A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C26FD524662807005E16A3 /* SceneDelegate.swift */; };
 		D2C26FDA24662809005E16A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C26FD924662809005E16A3 /* Assets.xcassets */; };
@@ -102,7 +102,6 @@
 		5946FA1724C39C1600028725 /* PatientInformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientInformationVC.swift; sourceTree = "<group>"; };
 		5946FA1824C39C1600028725 /* InformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationVC.swift; sourceTree = "<group>"; };
 		5946FA1924C39C1600028725 /* NextAppointmentsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextAppointmentsList.swift; sourceTree = "<group>"; };
-		5946FA1A24C39C1600028725 /* DentistInformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DentistInformationVC.swift; sourceTree = "<group>"; };
 		5946FA1B24C39C1600028725 /* PatientFileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientFileVC.swift; sourceTree = "<group>"; };
 		5946FA1C24C39C1600028725 /* AppointmentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentVC.swift; sourceTree = "<group>"; };
 		5946FA1D24C39C1600028725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +114,8 @@
 		5946FA2724C39C1600028725 /* Maps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		5946FA2824C39C1600028725 /* AppointmentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentCell.swift; sourceTree = "<group>"; };
 		5946FA2B24C39C1600028725 /* Lalezar-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lalezar-Regular.ttf"; sourceTree = "<group>"; };
+		5946FA5024C3BA2D00028725 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5946FA5624C4017200028725 /* DentistInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentistInfoVC.swift; sourceTree = SOURCE_ROOT; };
 		9377AE6CE82235456148A2D9 /* Pods-FirebaseTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.release.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		D209075F24B9EA180069B920 /* FirebaseMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirebaseMain.storyboard; sourceTree = "<group>"; };
@@ -230,6 +231,7 @@
 		5946FA0724C39C1600028725 /*  ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5946FA5624C4017200028725 /* DentistInfoVC.swift */,
 				5946FA0824C39C1600028725 /* PatientHistoryVC.swift */,
 				5946FA0924C39C1600028725 /* ViewController.swift */,
 				5946FA0A24C39C1600028725 /* ChoiceDentistCV.swift */,
@@ -248,9 +250,9 @@
 				5946FA1724C39C1600028725 /* PatientInformationVC.swift */,
 				5946FA1824C39C1600028725 /* InformationVC.swift */,
 				5946FA1924C39C1600028725 /* NextAppointmentsList.swift */,
-				5946FA1A24C39C1600028725 /* DentistInformationVC.swift */,
 				5946FA1B24C39C1600028725 /* PatientFileVC.swift */,
 				5946FA1C24C39C1600028725 /* AppointmentVC.swift */,
+				5946FA5024C3BA2D00028725 /* GoogleService-Info.plist */,
 			);
 			path = " ViewController";
 			sourceTree = "<group>";
@@ -484,12 +486,12 @@
 			files = (
 				D209076024B9EA180069B920 /* FirebaseMain.storyboard in Resources */,
 				D2C26FDD24662809005E16A3 /* Preview Assets.xcassets in Resources */,
+				5946FA5124C3BA2D00028725 /* GoogleService-Info.plist in Resources */,
 				5946FA4524C39C1700028725 /* Main.storyboard in Resources */,
 				D2C26FDA24662809005E16A3 /* Assets.xcassets in Resources */,
 				5946FA4424C39C1700028725 /* LaunchScreen.storyboard in Resources */,
 				5946FA4D24C39C1700028725 /* Lalezar-Regular.ttf in Resources */,
 				5946FA4324C39C1700028725 /* Assets.xcassets in Resources */,
-				D26B2C612469F2A200470CA2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,10 +549,10 @@
 				5946FA3424C39C1700028725 /* EmergencyVC.swift in Sources */,
 				D2C2705724662F3F005E16A3 /* Item.swift in Sources */,
 				5946FA4124C39C1700028725 /* PatientFileVC.swift in Sources */,
-				5946FA4024C39C1700028725 /* DentistInformationVC.swift in Sources */,
 				5946FA4A24C39C1700028725 /* Maps.swift in Sources */,
 				5946FA3C24C39C1700028725 /* PatientOfTheDentistVC.swift in Sources */,
 				5946FA2F24C39C1700028725 /* ViewController.swift in Sources */,
+				5946FA5724C4017200028725 /* DentistInfoVC.swift in Sources */,
 				5946FA3224C39C1700028725 /* ScheduleVC.swift in Sources */,
 				5946FA4B24C39C1700028725 /* AppointmentCell.swift in Sources */,
 				D2C2704B24662C68005E16A3 /* Optional.swift in Sources */,
@@ -730,7 +732,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseTemplate/Preview Content\"";
-				DEVELOPMENT_TEAM = 9VCECTYT2E;
+				DEVELOPMENT_TEAM = 2S34D5NT68;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -762,7 +764,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseTemplate/Preview Content\"";
-				DEVELOPMENT_TEAM = 9VCECTYT2E;
+				DEVELOPMENT_TEAM = 2S34D5NT68;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

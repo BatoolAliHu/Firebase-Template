@@ -287,56 +287,50 @@
             </objects>
             <point key="canvasLocation" x="2074" y="-15"/>
         </scene>
-        <!--Dentist InfoVC-->
+        <!--Dentist InformationVC-->
         <scene sceneID="5gM-aC-y7h">
             <objects>
-                <viewController id="AKE-lo-rhK" customClass="DentistInfoVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AKE-lo-rhK" customClass="DentistInformationVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ab5-Qw-H9G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="26" translatesAutoresizingMaskIntoConstraints="NO" id="KCc-5T-zby">
-                                <rect key="frame" x="0.0" y="-9" width="414" height="905"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="25" translatesAutoresizingMaskIntoConstraints="NO" id="TUg-Jo-Xif">
+                                <rect key="frame" x="0.0" y="-14" width="414" height="925"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="المستشفى" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9nv-Nz-hVu">
-                                <rect key="frame" x="109" y="316" width="216" height="27"/>
+                                <rect key="frame" x="109" y="316" width="216" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="المسمى الوظيفي" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qNq-zb-pd1">
-                                <rect key="frame" x="109" y="264" width="216" height="30"/>
+                                <rect key="frame" x="109" y="264" width="216" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="المبنى" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cnC-KA-uW2">
-                                <rect key="frame" x="231" y="366" width="93" height="29"/>
+                                <rect key="frame" x="211" y="366" width="114" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="السيرة الذاتية" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezf-Qs-5lk">
-                                <rect key="frame" x="93" y="484" width="253" height="165"/>
+                                <rect key="frame" x="93" y="488" width="253" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="العيادة" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWY-U9-wZs">
-                                <rect key="frame" x="109" y="366" width="104" height="30"/>
+                                <rect key="frame" x="109" y="366" width="104" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الرقم الداخلي للعيادة" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Uv-9U-Lt0">
-                                <rect key="frame" x="109" y="414" width="216" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="هل انت متخصص؟" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l4B-dS-Bb0">
-                                <rect key="frame" x="109" y="211" width="216" height="34"/>
+                                <rect key="frame" x="109" y="418" width="216" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -345,15 +339,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="EKf-wO-AD9"/>
                     </view>
-                    <connections>
-                        <outlet property="build" destination="cnC-KA-uW2" id="m2S-pi-dBe"/>
-                        <outlet property="cV" destination="ezf-Qs-5lk" id="Kya-Ao-1dd"/>
-                        <outlet property="clinic" destination="WWY-U9-wZs" id="dZ0-Zt-feZ"/>
-                        <outlet property="degreeTitle" destination="qNq-zb-pd1" id="0Zc-67-MN7"/>
-                        <outlet property="extensionNumber" destination="2Uv-9U-Lt0" id="5QC-o1-Ivp"/>
-                        <outlet property="hospital" destination="9nv-Nz-hVu" id="6t2-Oa-8C6"/>
-                        <outlet property="isSpecialized" destination="l4B-dS-Bb0" id="8Mb-RA-M4f"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QoZ-TP-cjt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -866,11 +851,11 @@
             <objects>
                 <viewController id="1bL-pD-68e" customClass="PatientHomeVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IYd-GC-AbN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="fyh-fL-oOB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVI-FO-mOV">
                                 <rect key="frame" x="43" y="619" width="152" height="138"/>
@@ -1076,7 +1061,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JuM-uG-TaC"/>
+        <segue reference="sqH-pb-EOT"/>
         <segue reference="5HO-gi-zfl"/>
         <segue reference="vYT-A8-cyh"/>
         <segue reference="OKA-RH-z0S"/>
@@ -1090,7 +1075,7 @@
         <image name="22" width="279" height="285"/>
         <image name="23" width="668" height="1446"/>
         <image name="24" width="696" height="1510"/>
-        <image name="26" width="724" height="1556"/>
+        <image name="25" width="718" height="1558"/>
         <image name="3" width="718" height="1566"/>
         <image name="4" width="584" height="1258"/>
         <image name="5" width="550" height="1190"/>
