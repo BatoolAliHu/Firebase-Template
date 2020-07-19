@@ -13,6 +13,7 @@ class SignInVC: UIViewController {
 
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var pss: UITextField!
+    var tag: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,17 +22,16 @@ class SignInVC: UIViewController {
     
 
     @IBAction func singIN(_ sender: UIButton) {
-        Auth.auth().signIn(withEmail: userName.text!, password: pss.text!, completion: {
-            [weak self] authResult, error in
-            guard let strongSelf = self else {return}
-            
-            if let error = error {
-                String.popAlert(presenter: strongSelf, Title: "Error", message: error.localizedDescription)
-            }else{
-                strongSelf.performSegue(withIdentifier: "", sender: nil)
-            }
-            
-        })
+      
+        switch tag {
+        case 0:
+            performSegue(withIdentifier: "3", sender: nil)
+        case 1:
+            performSegue(withIdentifier: "4", sender: nil)
+        default:
+            ""
+        }
+        
     }
     /*
     // MARK: - Navigation

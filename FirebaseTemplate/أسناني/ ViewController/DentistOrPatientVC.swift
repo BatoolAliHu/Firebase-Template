@@ -12,7 +12,7 @@ class DentistOrPatientVC: UIViewController {
     
     
     @IBAction func momoKaKa(_ sender: UIButton) {
-        performSegue(withIdentifier: "بيانات١", sender: sender.tag)
+        performSegue(withIdentifier: "5", sender: sender.tag)
         
     }
     
@@ -20,7 +20,7 @@ class DentistOrPatientVC: UIViewController {
         if let tag = sender as? Int{
             
             
-            if let vc = segue.destination as? InformationVC {
+            if let vc = segue.destination as? SignInVC {
                 vc.tag = tag
             }
         }

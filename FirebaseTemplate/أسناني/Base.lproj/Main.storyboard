@@ -217,7 +217,6 @@
                     <navigationItem key="navigationItem" id="8rJ-R1-CFq"/>
                     <connections>
                         <segue destination="TJV-39-K0J" kind="show" identifier="تسجيل دخول" id="0B6-7X-kl4"/>
-                        <segue destination="slJ-Jx-O6m" kind="show" identifier="دخول" id="rxq-Pg-TKQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJM-U3-Q1Y" sceneMemberID="firstResponder"/>
@@ -259,6 +258,7 @@
                     <navigationItem key="navigationItem" id="lUW-oG-xyP"/>
                     <connections>
                         <segue destination="l2g-86-CpC" kind="show" identifier="بيانات١" id="wUN-ca-We7"/>
+                        <segue destination="slJ-Jx-O6m" kind="show" identifier="" id="ujU-3J-PDR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hb1-RV-V2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -535,11 +535,13 @@
                     <connections>
                         <outlet property="pss" destination="Aj6-ST-JwG" id="Tpf-gN-9L5"/>
                         <outlet property="userName" destination="5DK-yx-En3" id="dhC-ht-pFU"/>
+                        <segue destination="1bL-pD-68e" kind="show" identifier="3" id="AV0-44-BI2"/>
+                        <segue destination="SKn-ta-a1B" kind="show" identifier="4" id="StS-Hn-jbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uz-Mb-11O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2074" y="706"/>
+            <point key="canvasLocation" x="2074" y="914"/>
         </scene>
         <!--MapsVC-->
         <scene sceneID="Zxi-zb-da4">
@@ -824,11 +826,11 @@
             <objects>
                 <viewController id="1bL-pD-68e" customClass="PatientHomeVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IYd-GC-AbN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="fyh-fL-oOB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVI-FO-mOV">
                                 <rect key="frame" x="43" y="626" width="152" height="138"/>
@@ -884,6 +886,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K4P-bh-nHY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="naY-nH-Vad"/>
                     <connections>
                         <segue destination="Txz-KF-T62" kind="show" identifier="emergency" id="4dH-1S-0me"/>
                     </connections>
@@ -1071,6 +1074,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="IMT-CX-XoT"/>
+        <segue reference="AV0-44-BI2"/>
+        <segue reference="StS-Hn-jbh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="725" height="1558"/>
