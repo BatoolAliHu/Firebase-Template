@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
 
 class InformationVC: UIViewController {
 
@@ -30,9 +31,12 @@ class InformationVC: UIViewController {
                 print("Error")
             }else{
                 Auth.auth().currentUser?.sendEmailVerification(completion: nil)
-                let uid = (Auth.auth().currentUser?.uid)
-                Auth.auth().currentUser?.setValue("true", forKey: "isPatient")
-                print(  Auth.auth().currentUser?.value(forKey: "isPatient"))
+               // let uid = (Auth.auth().currentUser?.uid)
+                //Auth.auth().currentUser?.setValue("true", forKey: "isPatient")
+               // print(  Auth.auth().currentUser?.value(forKey: "isPatient"))
+                Auth.auth().currentUser?.setValue(  ["this": "test"], forKey: "isPatient")
+               print( Auth.auth().currentUser?.value(forKey: "isPatient"))
+            
             }
         })
     }

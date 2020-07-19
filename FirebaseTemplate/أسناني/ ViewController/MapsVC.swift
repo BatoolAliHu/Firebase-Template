@@ -21,6 +21,10 @@ class MapsVC: UIViewController {
 //        hamadAlsaqerHospital()
     }
     
+    @IBAction func backBtn(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
     func showHospitalLocation(hospitalLocArray: [hospitalLocations], selectedLoc: String){
         var hospital: hospitalLocations = hospitalLocations(hospitalName: "", lon: 0.0, lat: 0.0, subtitle: "")
         for i in 0..<hospitalLocArray.count{

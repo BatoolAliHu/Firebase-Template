@@ -11,7 +11,8 @@ import Foundation
 
 let bloodType = [" ",
     "AB", "AB-", "A", "A-", "B", "B-", "O", "O-"]
-let gender = ["ذكر", "أنثى"]
+let gender = ["",
+    "ذكر", "أنثى"]
 
 let governorate = [" ",
     "حولي", "العاصمة", "الجهراء", "مبارك الكبير", "الفروانية", "الأحمدي"]
