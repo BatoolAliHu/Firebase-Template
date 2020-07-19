@@ -39,6 +39,9 @@
 		5946FA4D24C39C1700028725 /* Lalezar-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5946FA2B24C39C1600028725 /* Lalezar-Regular.ttf */; };
 		5946FA5124C3BA2D00028725 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5946FA5024C3BA2D00028725 /* GoogleService-Info.plist */; };
 		5946FA5724C4017200028725 /* DentistInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA5624C4017200028725 /* DentistInfoVC.swift */; };
+		5946FA5924C472BD00028725 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5946FA5824C472BD00028725 /* loading.gif */; };
+		5946FA5C24C4764000028725 /* LoadingGifVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA5B24C4764000028725 /* LoadingGifVC.swift */; };
+		5946FA5E24C4774900028725 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5946FA5D24C4774900028725 /* LoadingVC.swift */; };
 		D209076024B9EA180069B920 /* FirebaseMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D209075F24B9EA180069B920 /* FirebaseMain.storyboard */; };
 		D2C26FD424662807005E16A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C26FD324662807005E16A3 /* AppDelegate.swift */; };
 		D2C26FD624662807005E16A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C26FD524662807005E16A3 /* SceneDelegate.swift */; };
@@ -116,6 +119,9 @@
 		5946FA2B24C39C1600028725 /* Lalezar-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lalezar-Regular.ttf"; sourceTree = "<group>"; };
 		5946FA5024C3BA2D00028725 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5946FA5624C4017200028725 /* DentistInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentistInfoVC.swift; sourceTree = SOURCE_ROOT; };
+		5946FA5824C472BD00028725 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = loading.gif; path = ../Model/loading.gif; sourceTree = "<group>"; };
+		5946FA5B24C4764000028725 /* LoadingGifVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingGifVC.swift; sourceTree = "<group>"; };
+		5946FA5D24C4774900028725 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		9377AE6CE82235456148A2D9 /* Pods-FirebaseTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.release.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		D209075F24B9EA180069B920 /* FirebaseMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirebaseMain.storyboard; sourceTree = "<group>"; };
@@ -222,6 +228,7 @@
 				5946FA1D24C39C1600028725 /* Assets.xcassets */,
 				5946FA1E24C39C1600028725 /* LaunchScreen.storyboard */,
 				5946FA2024C39C1600028725 /* Main.storyboard */,
+				5946FA5A24C472DC00028725 /* Gif */,
 				5946FA2224C39C1600028725 /* Model */,
 				5946FA2A24C39C1600028725 /* Font */,
 			);
@@ -235,6 +242,9 @@
 				5946FA0824C39C1600028725 /* PatientHistoryVC.swift */,
 				5946FA0924C39C1600028725 /* ViewController.swift */,
 				5946FA0A24C39C1600028725 /* ChoiceDentistCV.swift */,
+				5946FA5B24C4764000028725 /* LoadingGifVC.swift */,
+				5946FA5D24C4774900028725 /* LoadingVC.swift */,
+				5946FA5824C472BD00028725 /* loading.gif */,
 				5946FA0B24C39C1600028725 /* DentistHomeVC.swift */,
 				5946FA0C24C39C1600028725 /* ScheduleVC.swift */,
 				5946FA0D24C39C1600028725 /* PatientHomeVC.swift */,
@@ -276,6 +286,13 @@
 				5946FA2B24C39C1600028725 /* Lalezar-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		5946FA5A24C472DC00028725 /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gif;
 			sourceTree = "<group>";
 		};
 		8378283248B71B8695152817 /* Pods */ = {
@@ -490,6 +507,7 @@
 				5946FA4524C39C1700028725 /* Main.storyboard in Resources */,
 				D2C26FDA24662809005E16A3 /* Assets.xcassets in Resources */,
 				5946FA4424C39C1700028725 /* LaunchScreen.storyboard in Resources */,
+				5946FA5924C472BD00028725 /* loading.gif in Resources */,
 				5946FA4D24C39C1700028725 /* Lalezar-Regular.ttf in Resources */,
 				5946FA4324C39C1700028725 /* Assets.xcassets in Resources */,
 			);
@@ -565,7 +583,9 @@
 				5946FA3B24C39C1700028725 /* MapsVC.swift in Sources */,
 				5946FA3524C39C1700028725 /* DoneBtn.swift in Sources */,
 				5946FA3024C39C1700028725 /* ChoiceDentistCV.swift in Sources */,
+				5946FA5E24C4774900028725 /* LoadingVC.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
+				5946FA5C24C4764000028725 /* LoadingGifVC.swift in Sources */,
 				5946FA4824C39C1700028725 /* Patient.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,

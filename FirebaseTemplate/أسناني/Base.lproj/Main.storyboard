@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1bL-pD-68e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A1S-3D-NrT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -114,7 +114,7 @@
                                             <outlet property="dateLable" destination="Lem-k5-Pq5" id="PhN-Ok-mu7"/>
                                             <outlet property="name1Lable" destination="ll1-vC-1ob" id="6le-QR-OHR"/>
                                             <outlet property="name2Lable" destination="K4T-JY-eV4" id="Nbc-PX-wUg"/>
-                                            <segue destination="KH8-FF-zr4" kind="show" id="gmT-YP-lvf"/>
+                                            <segue destination="oM3-v4-kJ2" kind="show" id="5As-MC-QRR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -135,28 +135,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrq-gE-EdE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6532" y="423"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Vdg-rX-Kqw">
-            <objects>
-                <viewController id="KH8-FF-zr4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="32u-ni-aP7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="11" translatesAutoresizingMaskIntoConstraints="NO" id="dfr-5a-b5e">
-                                <rect key="frame" x="0.0" y="-4" width="414" height="846"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="WAL-4H-zFm"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="65Z-Ox-rbz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Hc-Xp-mnE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7359" y="423"/>
         </scene>
         <!--DentistsVC-->
         <scene sceneID="B3F-kc-z5C">
@@ -358,28 +336,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QoZ-TP-cjt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3673.913043478261" y="-335.49107142857139"/>
-        </scene>
-        <!--Patient HistoryVC-->
-        <scene sceneID="Mlu-rm-ull">
-            <objects>
-                <viewController id="xqB-qJ-uXK" customClass="PatientHistoryVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cHe-2m-iKo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="خلفية - ابيض" translatesAutoresizingMaskIntoConstraints="NO" id="K4D-4v-oM4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="848"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="HCk-DR-Jfa"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="l9G-Dr-UtD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uif-J2-8eq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5428.985507246377" y="-281.25"/>
         </scene>
         <!--InformationVC-->
         <scene sceneID="GLw-3i-q7L">
@@ -737,22 +693,6 @@
             </objects>
             <point key="canvasLocation" x="4686.9565217391309" y="1102.9017857142856"/>
         </scene>
-        <!--Patient Of The DentistVC-->
-        <scene sceneID="TDl-Jb-Fsp">
-            <objects>
-                <viewController id="Bda-tO-eNx" customClass="PatientOfTheDentistVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sbj-W6-1p4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="QDr-Cy-FjW"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="iI6-Rt-HiM"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lvW-aT-RlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3087" y="-1564"/>
-        </scene>
         <!--Dentist HomeVC-->
         <scene sceneID="YUG-L5-sT4">
             <objects>
@@ -780,7 +720,7 @@
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="ifTapped:" destination="SKn-ta-a1B" eventType="touchUpInside" id="h04-LQ-8s6"/>
-                                    <segue destination="Bda-tO-eNx" kind="show" identifier="patient" id="Q0r-Gp-DCe"/>
+                                    <segue destination="oM3-v4-kJ2" kind="show" identifier="patient" id="qyX-8P-kNf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -796,7 +736,7 @@
         <!--ScheduleVC-->
         <scene sceneID="kJi-GS-p3z">
             <objects>
-                <viewController id="quQ-WO-gU0" customClass="ScheduleVC" sceneMemberID="viewController">
+                <viewController id="quQ-WO-gU0" customClass="ScheduleVC" customModule="Asnani" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TXV-D2-vwg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -810,7 +750,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.35779644691780821" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="addAppointmentBtn:" destination="quQ-WO-gU0" eventType="touchUpInside" id="kPF-Ul-8ke"/>
+                                    <action selector="addAppointmentBtn:" destination="quQ-WO-gU0" eventType="touchUpInside" id="bqU-94-76y"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -821,7 +761,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U0z-o9-PBd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4543.4782608695659" y="-1563.6160714285713"/>
+            <point key="canvasLocation" x="4543" y="-1656"/>
         </scene>
         <!--Patient FileVC-->
         <scene sceneID="C1T-O2-TPe">
@@ -856,6 +796,9 @@
                         <viewLayoutGuide key="safeArea" id="p8q-V8-eH0"/>
                     </view>
                     <navigationItem key="navigationItem" id="KBB-S1-R4v"/>
+                    <connections>
+                        <segue destination="oM3-v4-kJ2" kind="show" identifier="xray" id="naF-rd-qiS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RYd-24-yKP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -866,11 +809,11 @@
             <objects>
                 <viewController id="1bL-pD-68e" customClass="PatientHomeVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IYd-GC-AbN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="fyh-fL-oOB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVI-FO-mOV">
                                 <rect key="frame" x="43" y="619" width="152" height="138"/>
@@ -913,7 +856,7 @@
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="ifTapped:" destination="1bL-pD-68e" eventType="touchUpInside" id="IQV-5x-atI"/>
-                                    <segue destination="xqB-qJ-uXK" kind="show" identifier="history" id="gzS-SY-dli"/>
+                                    <segue destination="oM3-v4-kJ2" kind="show" identifier="history" id="IMT-CX-XoT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1074,9 +1017,46 @@
             </objects>
             <point key="canvasLocation" x="6182.608695652174" y="2219.1964285714284"/>
         </scene>
+        <!--LoadingVC-->
+        <scene sceneID="80Z-R6-P7b">
+            <objects>
+                <viewController id="oM3-v4-kJ2" customClass="LoadingVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="drq-fU-afh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="خلفية - ابيض" translatesAutoresizingMaskIntoConstraints="NO" id="mCT-U7-gHt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="848"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="قريبًا.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPB-PS-gYI">
+                                <rect key="frame" x="141" y="389" width="132" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="79h-9C-esk">
+                                <rect key="frame" x="87" y="449" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Rmz-JC-WWU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DOa-zE-KCT"/>
+                    <connections>
+                        <outlet property="loadingGif" destination="79h-9C-esk" id="gwk-aM-xsn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cqs-4Y-uqJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6761" y="-402"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JuM-uG-TaC"/>
+        <segue reference="IMT-CX-XoT"/>
+        <segue reference="sqH-pb-EOT"/>
         <segue reference="5HO-gi-zfl"/>
         <segue reference="vYT-A8-cyh"/>
         <segue reference="OKA-RH-z0S"/>
@@ -1084,7 +1064,6 @@
     <resources>
         <image name="1" width="725" height="1558"/>
         <image name="10" width="690" height="1492"/>
-        <image name="11" width="696" height="1524"/>
         <image name="12" width="720" height="1562"/>
         <image name="2" width="678" height="1428"/>
         <image name="22" width="279" height="285"/>

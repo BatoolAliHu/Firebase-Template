@@ -11,14 +11,63 @@ import EventKit
 
 class ScheduleVC: UIViewController {
     
+    let eventStore = EKEventStore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
     
+    func checkPermission(){
+        switch EKEventStore.authorizationStatus(for: .event){
+        case .authorized:
+            print("Yaaay!")
+            self.createReminder(name: "Batool")
+        case .notDetermined:
+            print("Not determined")
+            eventStore.requestAccess(to: .event
+                , completion: { (isAllowed , error) in
+                    
+                    if let error = error {
+                        print(error.localizedDescription)
+                    }else{
+                        if isAllowed {
+                            print("Alllooooweeeeddddd")
+                            self.createReminder(name: "Batool")
+                        }
+                    }
+            })
+        case .restricted , .denied:
+            print("تستهبل ؟")
+        }
+    }
+   
+
+    func createReminder(name: String){
+        DispatchQueue.main.async {
+                let eventStore = EKEventStore()
+                let event = EKEvent(eventStore: eventStore)
+                let endDate = Date.init(timeInterval: 3600 , since: Date())
+                event.calendar = eventStore.defaultCalendarForNewEvents
+                event.title = name
+                event.startDate = Date()
+                event.endDate = endDate
+
+            do {
+                try eventStore.save(event, span: .thisEvent)
+            }catch {
+                print("saving event error: \(error)")
+            }
+
+        }
+
+    }
+
     @IBAction func addAppointmentBtn(_ sender: Any) {
-        let appointmentStore: EKEventStore = EKEventStore()
+        checkPermission()
+   //     createReminder()
+    /*    let appointmentStore: EKEventStore = EKEventStore()
         DispatchQueue.main.async() {
             appointmentStore.requestAccess(to: .event)  {(granted, error) in
                 if (granted)  &&  (error == nil)
@@ -43,11 +92,12 @@ class ScheduleVC: UIViewController {
                 }
                 
             }
+ 
             
             
             
         }
-        
+        */
         
     }
 }
