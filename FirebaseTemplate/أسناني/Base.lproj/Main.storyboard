@@ -536,7 +536,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uz-Mb-11O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2074" y="856"/>
+            <point key="canvasLocation" x="2074" y="706"/>
         </scene>
         <!--MapsVC-->
         <scene sceneID="Zxi-zb-da4">
@@ -809,11 +809,11 @@
             <objects>
                 <viewController id="1bL-pD-68e" customClass="PatientHomeVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IYd-GC-AbN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="fyh-fL-oOB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVI-FO-mOV">
                                 <rect key="frame" x="43" y="619" width="152" height="138"/>
@@ -1056,7 +1056,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="IMT-CX-XoT"/>
-        <segue reference="sqH-pb-EOT"/>
+        <segue reference="JuM-uG-TaC"/>
         <segue reference="5HO-gi-zfl"/>
         <segue reference="vYT-A8-cyh"/>
         <segue reference="OKA-RH-z0S"/>

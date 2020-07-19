@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class InformationVC: UIViewController {
 
@@ -23,6 +24,17 @@ class InformationVC: UIViewController {
     }
     
     @IBAction func next(_ sender: Any) {
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: {(authResult , error) in
+            
+            if let error = error {
+                print("Error")
+            }else{
+                Auth.auth().currentUser?.sendEmailVerification(completion: nil)
+                let uid = (Auth.auth().currentUser?.uid)
+                Auth.auth().currentUser?.setValue("true", forKey: "isPatient")
+                print(  Auth.auth().currentUser?.value(forKey: "isPatient"))
+            }
+        })
     }
     
     /*
