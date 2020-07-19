@@ -516,6 +516,9 @@
                                 <rect key="frame" x="115" y="495" width="185" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="singIN:" destination="slJ-Jx-O6m" eventType="touchUpInside" id="OQ6-OX-od9"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمة المرور" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aj6-ST-JwG">
                                 <rect key="frame" x="66" y="417" width="281" height="37"/>
@@ -529,6 +532,10 @@
                         <viewLayoutGuide key="safeArea" id="KI9-cj-mxE"/>
                     </view>
                     <navigationItem key="navigationItem" id="cD4-xF-qF1"/>
+                    <connections>
+                        <outlet property="pss" destination="Aj6-ST-JwG" id="Tpf-gN-9L5"/>
+                        <outlet property="userName" destination="5DK-yx-En3" id="dhC-ht-pFU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uz-Mb-11O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
