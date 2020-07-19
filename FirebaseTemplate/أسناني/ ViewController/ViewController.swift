@@ -14,9 +14,9 @@ class ViewController: UIViewController {
     @IBAction func batool(_ sender: UIButton) {
         switch sender.tag {
         case 0:
-            performSegue(withIdentifier: "تسجيل دخول", sender: nil)
-        case 1:
             performSegue(withIdentifier: "دخول", sender: nil)
+        case 1:
+           performSegue(withIdentifier: "تسجيل دخول", sender: nil)
         default:
             "Data Not Found"
         }

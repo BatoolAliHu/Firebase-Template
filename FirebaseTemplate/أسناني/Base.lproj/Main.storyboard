@@ -216,7 +216,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="8rJ-R1-CFq"/>
                     <connections>
-                        <segue destination="TJV-39-K0J" kind="modal" identifier="تسجيل دخول" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="0B6-7X-kl4"/>
+                        <segue destination="TJV-39-K0J" kind="show" identifier="تسجيل دخول" id="0B6-7X-kl4"/>
                         <segue destination="slJ-Jx-O6m" kind="show" identifier="دخول" id="rxq-Pg-TKQ"/>
                     </connections>
                 </viewController>
@@ -229,7 +229,7 @@
             <objects>
                 <viewController id="TJV-39-K0J" customClass="DentistOrPatientVC" customModule="Asnani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wVW-Ok-NnE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="Vx2-M6-llq">
@@ -501,8 +501,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" ambiguous="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="fgD-EK-FQ6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="fgD-EK-FQ6">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="البريد الإلكتروني" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5DK-yx-En3">
                                 <rect key="frame" x="65" y="365" width="281" height="37"/>
@@ -511,8 +512,9 @@
                                 <fontDescription key="fontDescription" name="Lalezar-Regular" family="Lalezar" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDm-jl-3be">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDm-jl-3be">
                                 <rect key="frame" x="115" y="495" width="185" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمة المرور" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aj6-ST-JwG">
@@ -524,9 +526,6 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="cDm-jl-3be" firstAttribute="top" secondItem="fgD-EK-FQ6" secondAttribute="bottom" constant="-400" id="Dhw-8o-68r"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KI9-cj-mxE"/>
                     </view>
                     <navigationItem key="navigationItem" id="cD4-xF-qF1"/>
