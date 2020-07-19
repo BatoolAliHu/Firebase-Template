@@ -35,8 +35,7 @@ class InformationVC: UIViewController {
                 print("Error")
             }else{
                 Auth.auth().currentUser?.sendEmailVerification(completion: nil)
-                Auth.auth().currentUser?.setValue(  ["this": "test"], forKey: "isPatient")
-               print( Auth.auth().currentUser?.value(forKey: "isPatient"))
+                self.performSegue(withIdentifier: self.segues[self.tag]!, sender: nil)
             
             }
         })
